@@ -1,0 +1,16 @@
+# Configurações locais do PyCharm
+.idea/
+
+# Ambiente virtual Python
+.venv/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Cache do pytest
+.pytest_cache/
+
+# Chaves e variáveis de ambiente
+.env
+.env.*
