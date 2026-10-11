@@ -32,15 +32,6 @@ Validar as funcionalidades do sistema de cálculo de frete por meio de testes un
 - **Resultado obtido:** 115 reais.
 - **Status:** Aprovado (PASSED).
 
-### CT03 — Teste Funcional
-
-- **Objetivo:** Verificar o cálculo de uma compra por meio da interface de execução do sistema.
-- **Pré-condição:** Existência de uma interface de linha de comando para o checkout.
-- **Entrada:** Subtotal de 250 reais.
-- **Procedimento:** Executar a aplicação, informar o subtotal e consultar o resultado.
-- **Resultado esperado:** Frete de 0 reais e total de 250 reais.
-- **Status:** Pendente de implementação e execução.
-
 
 ### CT03 — Teste Funcional
 
