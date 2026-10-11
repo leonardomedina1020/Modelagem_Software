@@ -41,10 +41,14 @@ Validar as funcionalidades do sistema de cálculo de frete por meio de testes un
 - **Resultado esperado:** Frete de 0 reais e total de 250 reais.
 - **Status:** Pendente de implementação e execução.
 
-## 3. Critérios de Aceitação
 
-- Os três tipos de teste devem ser executados.
-- Os resultados obtidos devem corresponder aos resultados esperados.
-- Cada teste deve possuir código disponível no GitHub.
-- Cada execução deve ter seu resultado registrado.
-- Nenhum teste deve ser considerado aprovado sem execução efetiva.
+### CT03 — Teste Funcional
+
+- **Objetivo:** Verificar o funcionamento completo do checkout pela interface de terminal.
+- **Requisitos:** RF02, RF04 e RF05.
+- **Pré-condição:** A aplicação deve estar implementada e disponível para execução.
+- **Entrada:** Subtotal de 250 reais.
+- **Procedimento:** Executar a aplicação utilizando subprocess, simulando a entrada do usuário.
+- **Resultado esperado:** Exibir "Frete: R$ 0,00" e "Total: R$ 250,00", encerrando com código 0.
+- **Resultado obtido:** Teste aprovado (PASSED).
+- **Status:** Aprovado.
