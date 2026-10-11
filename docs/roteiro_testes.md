@@ -7,15 +7,18 @@ Validar as funcionalidades do sistema de cálculo de frete por meio de testes un
 
 ## 2. Casos de Teste
 
+
 ### CT01 — Teste Unitário
 
-- **Objetivo:** Verificar o cálculo de frete grátis.
+- **Objetivo:** Verificar a aplicação de frete grátis para compras com subtotal maior ou igual a 250 reais.
 - **Requisito:** RF02.
 - **Pré-condição:** A função `calcular_frete()` deve estar implementada.
-- **Entrada:** Subtotal de 250 reais.
-- **Procedimento:** Executar `calcular_frete(250)`.
-- **Resultado esperado:** Retornar 0 reais de frete.
-- **Status:** Pendente de execução neste laboratório.
+- **Entradas:** 250.00, 250.01, 300.00 e 1000.00.
+- **Procedimento:** Executar os quatro casos parametrizados da classe `TestCalculoFreteRF02` utilizando pytest.
+- **Resultado esperado:** Retornar 0 reais de frete para todas as entradas.
+- **Resultado obtido:** 4 casos aprovados (PASSED).
+- **Status:** Aprovado.
+
 
 ### CT02 — Teste de Integração
 
