@@ -20,14 +20,17 @@ Validar as funcionalidades do sistema de cálculo de frete por meio de testes un
 - **Status:** Aprovado.
 
 
+
 ### CT02 — Teste de Integração
 
-- **Objetivo:** Verificar a integração entre o cálculo de frete e o cálculo do valor total de uma compra.
-- **Pré-condição:** Existência de um componente de checkout que utilize a função `calcular_frete()`.
+- **Objetivo:** Verificar a integração entre os módulos de cálculo de frete e checkout.
+- **Requisitos:** RF01 e RF04.
+- **Pré-condição:** As funções `calcular_frete()` e `calcular_total()` devem estar implementadas.
 - **Entrada:** Subtotal de 100 reais.
-- **Procedimento:** Executar o cálculo total da compra, incluindo o frete.
-- **Resultado esperado:** Total de 115 reais, sendo 100 reais de subtotal e 15 reais de frete.
-- **Status:** Pendente de implementação e execução.
+- **Procedimento:** Executar `calcular_total(100)` utilizando pytest.
+- **Resultado esperado:** Retornar 115 reais, correspondentes ao subtotal de 100 reais acrescido de 15 reais de frete.
+- **Resultado obtido:** 115 reais.
+- **Status:** Aprovado (PASSED).
 
 ### CT03 — Teste Funcional
 
